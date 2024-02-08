@@ -21,7 +21,7 @@ export const LoginForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const path = "http://localhost:3000/api/public/login";
+      const path = "https://services.julian-webinar.c4c7us.com/api/public/login";
       await axios.post(path, form);
       localStorage.setItem("token", "Bearer 1234");
       navigate("/app");

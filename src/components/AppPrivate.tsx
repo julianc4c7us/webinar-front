@@ -6,7 +6,7 @@ export const AppPrivate = () => {
 
   const getAuthEndpoint = async () => {
     try {
-      const path = "http://localhost:3000/api/private/";
+      const path = "https://services.julian-webinar.c4c7us.com/api/private/";
       const token = localStorage.getItem("token");
       const response = await axios.get(path, {
         headers: {
